@@ -11,6 +11,7 @@ import ErrorPage from './pages/ErrorPage';
 import Session from './components/feature/user/Session';
 
 import SignupPage from './pages/SignupPage';
+import HabitPage from './pages/HabitPage';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -28,6 +29,7 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/reset-password" element={<ResetPasswordPage />} />
               <Route path="/error" element={<ErrorPage />} />
+              <Route path="/ecohabit" element={<HabitPage />} />
             </Routes>
             <Footer />
           </>
